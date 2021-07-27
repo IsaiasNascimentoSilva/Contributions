@@ -1,7 +1,7 @@
 package agenda;
 
 /**
- * Representação de uma agenda, especificamente de um sistema de gerenciamento de contatos, caracterizada
+ * Representaï¿½ï¿½o de uma agenda, especificamente de um sistema de gerenciamento de contatos, caracterizada
  * por guardar e manipular contatos em sua estrutura.
  * 
  * @author Isaias.Silva - 118111333
@@ -22,15 +22,15 @@ public class Agenda {
 	}
 	
 	/**
-	 * Retorna uma representação booleana sobre o sucesso da operação de cadastro do contato, e inseri
-	 * na agenda numa posição específica o contato.
+	 * Retorna uma representaï¿½ï¿½o booleana sobre o sucesso da operaï¿½ï¿½o de cadastro do contato, e inseri
+	 * na agenda numa posiï¿½ï¿½o especï¿½fica o contato.
 	 * 
-	 * @param posicao, a posição na agenda onde o contato deve ser inserido.
+	 * @param posicao, a posiï¿½ï¿½o na agenda onde o contato deve ser inserido.
 	 * @param nome, nome do contato.
 	 * @param sobrenome, sobrenome do contato.
-	 * @param telefone, número telefônico do contato.
+	 * @param telefone, nï¿½mero telefï¿½nico do contato.
 	 * 
-	 * @return a representação boolean do resultado da opreção.
+	 * @return a representaï¿½ï¿½o boolean do resultado da opreï¿½ï¿½o.
 	 */
 	public boolean cadastrarContato(int posicao, String nome, String sobrenome, String telefone){
 		if ((posicao <= 0) || (posicao > 100)){
@@ -44,9 +44,9 @@ public class Agenda {
 	}
 	
 	/**
-	 * Retorna uma representação em String das posições e dos contatos correspondentes armazenados na agenda.
+	 * Retorna uma representaï¿½ï¿½o em String das posiï¿½ï¿½es e dos contatos correspondentes armazenados na agenda.
 	 * 
-	 * @return a representação String da posição, do nome e do sobrenome.
+	 * @return a representaï¿½ï¿½o String da posiï¿½ï¿½o, do nome e do sobrenome.
 	 */
 	public String listaContatos(){
 			String contatos = "";
@@ -58,11 +58,11 @@ public class Agenda {
 		}
 	
 	/**
-	 * Retorna uma representação em String do contato armazenado na agenda.
+	 * Retorna uma representaï¿½ï¿½o em String do contato armazenado na agenda.
 	 * 
-	 * @param posicao, a posição onde se encontra o contato.
+	 * @param posicao, a posiï¿½ï¿½o onde se encontra o contato.
 	 * 
-	 * @return a representação String do nome, sobrenome e número telefônnico.
+	 * @return a representaï¿½ï¿½o String do nome, sobrenome e nï¿½mero telefï¿½nnico.
 	 */
 	public String exibirContato(int posicao){
 		String contato = "";
@@ -70,8 +70,9 @@ public class Agenda {
 			contato = meusContatos[posicao-1].toString();
 		}
 		else{
-			contato = "POSIÇÃO INVÁLIDA!";
+			contato = "POSIï¿½ï¿½O INVï¿½LIDA!";
 		}
 		return contato;
 	}
+	
 }
